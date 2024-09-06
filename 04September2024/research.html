@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h3>Inshallah I shall go MOUNTAIN EVEREST ONE DAY</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur
+      iure necessitatibus delectus aspernatur. Quas dolor nemo, accusamus
+      nesciunt velit accusantium pariatur fugiat quo eaque culpa soluta officiis
+      itaque, illo doloribus maiores sapiente voluptas a cupiditate sequi
+      consequatur! Accusantium illum voluptate fugit, a quidem similique
+      repellendus consequuntur quia laboriosam mollitia.
+    </p>
+
+    <div style="background-color: aqua;color: black;height: 20px;width: 363px;">
+
+    </div>
+
+    <button class="btn1">HIDE</button>
+    <button class="btn2" >SHOW</button>
+    <button  class="btn3">TOGGLES</button>
+
+    <script>
+        $(function(){
+            $("h3").click(function(){
+                $(this).hide();
+            })
+
+            $("h3").click(function(){
+               let d = $(this).text();
+               $("div").text(d);
+            })
+
+            $(".btn1").click(function(){
+             let y =   $("div").text();
+            // $(this).hide();
+               // alert(y)
+             $("div").hide(y);
+            });
+
+            $(".btn2").click(function(){
+             let y =   $("div").text();
+            // $(this).hide();
+               // alert(y)
+             $("div").show(y);
+            });
+
+            $(".btn3").click(function(){
+             let y =   $("div").text();
+            // $(this).hide();
+               // alert(y)
+             $("div").toggle(y);
+            });
+        })
+    </script>
+  </body>
+</html>
